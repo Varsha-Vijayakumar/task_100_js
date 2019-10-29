@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <button onclick="copy()">copy</button>
+    <script>
+        let str1 = prompt("write somthing")
+        let str2 = "Null"
+        document.write("Before copying, str1=", str1, "<br>")
+        document.write("Before copying, str2=", str2)
+        str2 = str1
+        str1 = "Null"
+        const copy = () => {
+            document.write("After copying, str1=", str1, "<br>")
+            document.write("After copying, str2=", str2)
+        }
+
+    </script>
+</body>
+
+</html>

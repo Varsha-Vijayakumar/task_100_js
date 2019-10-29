@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <script>
+        let str1 = prompt("Type a string")
+        let con = /[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/g
+        let vow = /[aeiouAEIOU]/g
+
+        document.write(str1, "<br>");
+        let vowares = str1.match(vow)
+        document.write("Number of vowels:", vowares.length, "<br>")
+        let conres = str1.match(con)
+        document.write("Number of consonants:", conres.length, "<br>")
+    </script>
+</body>
+
+</html>

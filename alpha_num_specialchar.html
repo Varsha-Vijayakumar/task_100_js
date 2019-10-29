@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <script>
+        let str1 = prompt("Write something")
+        let alpha = /[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]/g
+        let num = /[0123456789]/g
+        let specialchar = /['@_!#$%^&*()<>?/\|}{~:;.,"-+']/g
+        document.write(str1, "<br>");
+        let alphares = str1.match(alpha)
+        document.write("Length of alphabets:", alphares.length, "<br>")
+        let numres = str1.match(num)
+        document.write("Length of digits:", numres.length, "<br>")
+        let scharres = str1.match(specialchar)
+        document.write("Length of special characters:", scharres.length, "<br>")
+
+
+    </script>
+</body>
+
+</html>

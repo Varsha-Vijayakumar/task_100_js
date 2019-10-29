@@ -1,0 +1,15 @@
+<html>
+
+<body>
+    <button onclick="concat()">click</button>
+    <script>
+        let str1 = prompt("Type String 1")
+        let str2 = prompt("Type String 2")
+        document.write("Before concat=", str1, "<br>", str2)
+        const concat = () => {
+            document.write("After concat=", str1.concat(str2))
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <button onclick="toggle()">Toggle</button>
+    <script>
+        let str1 = prompt("Type a String")
+        let str2 = ""
+        document.write("Before toggle=", str1)
+
+        const toggle = () => {
+            for (i = 0; i < str1.length; i++) {
+                if (str1.charAt(i) == str1.charAt(i).toUpperCase()) {
+                    str2 += str1.charAt(i).toLowerCase()
+                }
+                else {
+                    str2 += str1.charAt(i).toUpperCase()
+                }
+            }
+            document.write(str2)
+        }
+
+    </script>
+</body>
+
+</html>

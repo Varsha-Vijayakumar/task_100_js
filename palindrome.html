@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <script>
+        let strr = prompt("Type a string")
+        document.write(strr, "<br>")
+        const palindrome = (str) => {
+
+            let strlen = str.length;
+            let middle = Math.floor(strlen / 2);
+
+            for (var i = 0; i < middle; i++) {
+                if (str[i] !== str[strlen - 1 - i]) {
+                    return ("Not a palindrome");
+                }
+            }
+
+            return ("Palindrome");
+        }
+        let res = palindrome(strr);
+        document.write(res)
+
+    </script>
+</body>
+
+</html>
