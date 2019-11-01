@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <h2>COUNT DIGITS</h2>
+    Enter the number:<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">Click</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER() {
+            var n = parseFloat(document.getElementById("h1").value);
+            var res = (n + '').replace('.', '').length;
+            document.getElementById("demo").innerHTML = res;
+        }
+    </script>
+</body>
+
+</html>

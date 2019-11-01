@@ -1,0 +1,29 @@
+<html lang="en">
+
+
+<body>
+
+    Type here --> <input type="text" id="a"><br><br>
+
+    <Button onClick="calc()"> Check </Button>
+    <div id="root"></div>
+
+
+    <script>
+        let calc = () => {
+            let check = /^[A-Za-z]+$/;
+            let char = document.getElementById("a").value;
+            if (char.match(check)) {
+                document.getElementById("root").innerHTML = "<p> " + char + " is a alphabet </p>";
+            }
+            else {
+                document.getElementById("root").innerHTML = "<p> " + char + " is a not a alphabet</p>";
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

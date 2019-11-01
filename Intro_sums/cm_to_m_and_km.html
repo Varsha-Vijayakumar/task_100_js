@@ -1,0 +1,30 @@
+<html lang="en">
+
+
+
+<body>
+    Length <input type="number" id="cm" />cm<br><br>
+
+    <Button onClick="meter()"> into Meter </Button>
+    <Button onClick="kilometer()"> into Kilometer </Button>
+    <div id="root"></div>
+
+
+    <script>
+        let meter = () => {
+            let cm = Number(document.getElementById("cm").value);
+            res = cm / 100;
+            console.log(res);
+            document.getElementById("root").innerHTML = "<p>" + res + "m" + "</p>";
+        }
+        let kilometer = () => {
+            let cm = Number(document.getElementById("cm").value);
+            res = cm / 100000;
+            console.log(res);
+            document.getElementById("root").innerHTML = "<p>" + res + "Km" + "</p>";
+        }
+
+    </script>
+</body>
+
+</html>

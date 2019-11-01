@@ -1,0 +1,26 @@
+<html lang="en">
+
+
+
+<body>
+
+    <form>
+        Length:<input type="number" id="length" /><br><br>
+        Breadth:<input type="number" id="breadth" />
+    </form>
+    <Button onClick="areaCalc()">Calculate </Button>
+    <div id="root"></div>
+
+
+    <script>
+        let areaCalc = () => {
+            let l = Number(document.getElementById("length").value);
+            let b = Number(document.getElementById("breadth").value);
+            let c = l * b;
+            console.log(c);
+            document.getElementById("root").innerHTML = "<p>Area of the Rectangle is " + c + "</p>";
+        }
+    </script>
+</body>
+
+</html>

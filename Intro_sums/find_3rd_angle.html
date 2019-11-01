@@ -1,0 +1,22 @@
+<html lang="en">
+
+
+<body>
+    First Angle <input type="number" id="first"> <br><br>
+    Second Angle <input type="number" id="second"><br><br>
+
+    <Button onClick="calc()"> Result </Button>
+    <div id="root"></div>
+
+
+    <script>
+        let calc = () => {
+            let first = Number(document.getElementById("first").value);
+            let second = Number(document.getElementById("second").value);
+            res = (first + second) - 180;
+            document.getElementById("root").innerHTML = "<p>" + "Third angle of the triangle is " + Math.abs(res) + "</p>";
+        }
+    </script>
+</body>
+
+</html>

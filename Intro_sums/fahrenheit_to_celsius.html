@@ -1,0 +1,22 @@
+<html lang="en">
+
+<body>
+    Temperature<input type="number" id="temp" /> &#8457;<br><br>
+
+    <Button onClick="celsius()"> into celsius </Button>
+    <div id="root"></div>
+
+
+    <script>
+        let celsius = () => {
+            let temp = Number(document.getElementById("temp").value);
+            res = ((temp - 32) * (5 / 9));
+            console.log(res);
+            document.getElementById("root").innerHTML = "<p>" + res + "&#8451;" + "</p>";
+        }
+
+
+    </script>
+</body>
+
+</html>

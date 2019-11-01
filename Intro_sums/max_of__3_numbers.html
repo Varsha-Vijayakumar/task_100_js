@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <h2>Maximum of 3 numbers</h2>
+    Enter 3 numbers=<br><br>
+    <input id="h1" type="text"><br><br>
+    <input id="h2" type="text"><br><br>
+    <input id="h3" type="text"><br><br>
+    <button onClick="MAX()">Click</button>
+    <div id="two"></div>
+    <script>
+        function MAX() {
+            var Num1 = parseInt(document.getElementById("h1").value);
+            var Num2 = parseInt(document.getElementById("h2").value);
+            var Num3 = parseInt(document.getElementById("h3").value);
+            var MAX = (Num1 > Num2) ? (Num1 > Num3 ? Num1 : Num3) : (Num2 > Num3 ? Num2 : Num3);
+            document.getElementById("two").innerHTML = "<h4>Maximum is= " + MAX + "</h4>";
+        }
+
+
+    </script>
+</body>
+
+</html>

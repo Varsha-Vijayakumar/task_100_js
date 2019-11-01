@@ -1,0 +1,62 @@
+<html>
+
+<body>
+    <h2>prime, armstrong or perfect number</h2>
+    Enter the number=<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="prime()">isprime?</button>
+    <button onClick="armstrong()">isarmstrong?</button>
+    <button onClick="perfect()">isperfect?</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function prime() {
+            var input = parseInt(document.getElementById("h1").value);
+            var res = 0;
+            for (var i = 2; i <= input / 2; i++) {
+                if (input % i == 0) {
+                    res = 1;
+                    break;
+                }
+            }
+            if (res == 0) {
+                document.getElementById("demo").innerHTML = input + "is prime";
+            }
+            else {
+                document.getElementById("demo").innerHTML = input + "is notprime";
+            }
+        }
+        function armstrong() {
+            var input = parseInt(document.getElementById("h1").value);
+            var res = input;
+            var sum = 0;
+            while (input > 0) {
+                var rem = input % 10;
+                sum = sum + rem * rem * rem;
+                input = parseInt(input / 10);
+            }
+            if (sum == res) {
+                document.getElementById("demo").innerHTML = res + "is armstrong";
+            }
+            else {
+                document.getElementById("demo").innerHTML = res + "is not armstrong";
+            }
+        }
+        function perfect() {
+            var input = parseInt(document.getElementById("h1").value);
+            var perf = 0;
+            for (var i = 0; i < input; i++) {
+                if (input % i == 0) {
+                    perf = perf + i;
+                }
+            }
+            if (perf == input) {
+                document.getElementById("demo").innerHTML = input + "is a perfect number";
+            }
+            else {
+                document.getElementById("demo").innerHTML = input + "is not a perfect number";
+            }
+        }
+    </script>
+</body>
+
+</html>

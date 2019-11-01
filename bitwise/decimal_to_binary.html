@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <h2> Decimal to binary</h2>
+    Enter a number=<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">Click</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER() {
+            var value = parseInt(document.getElementById("h1").value);
+            var bin = (value >>> 0).toString(2);
+            document.getElementById("demo").innerHTML = "Answer=" + bin;
+
+        }
+    </script>
+</body>
+
+</html>

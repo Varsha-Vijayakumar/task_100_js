@@ -1,0 +1,24 @@
+<html lang="en">
+
+
+<body>
+    Principal, P <input type="number" id="p"><br>
+    TimePeriod, T <input type="number" id="t"><br>
+    Rate of interest, R <input type="number" id="r"><br>
+
+    <Button onClick="simpleInterest()"> calculate </Button>
+    <div id="root"></div>
+
+    <script>
+        let simpleInterest = () => {
+            let p = document.getElementById("p").value;
+            let t = document.getElementById("t").value;
+            let r = document.getElementById("r").value;
+            si = (p * t * r) / 100;
+            document.getElementById("root").innerHTML = "<p>simple interest SI= " + si + "</p>";
+        }
+
+    </script>
+</body>
+
+</html>

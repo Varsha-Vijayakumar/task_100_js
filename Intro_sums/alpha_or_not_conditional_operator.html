@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <h2>Alphabet or not</h2>
+    Enter a Character=<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">Click</button>
+    <div id="demo"></div>
+    <script>
+        function ENTER() {
+            var Letter = document.getElementById("h1").value;
+            var reg = /^[A-Za-z]+$/;
+            var LETTER = (Letter.match(reg)) ? ' an alphabet' : 'not an alphabet';
+            document.getElementById("demo").innerHTML = Letter + " is " + LETTER;
+        }
+
+
+    </script>
+</body>
+
+</html>

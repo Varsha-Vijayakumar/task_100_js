@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <h2> Swap 2 numbers</h2>
+    Enter number1=<input id="h1" type="text"><br><br>
+    Enetr number2=<input id="h2" type="text"><br><br>
+    <button onClick="ENTER()">Swap</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER() {
+            var num1 = parseInt(document.getElementById("h1").value);
+            var num2 = parseInt(document.getElementById("h2").value);
+            num1 = num1 ^ num2;
+            num2 = num1 ^ num2;
+            num1 = num1 ^ num2;
+            document.getElementById("demo").innerHTML = "Answer=" + num1 + " and " + num2;
+
+        }
+    </script>
+</body>
+
+</html>

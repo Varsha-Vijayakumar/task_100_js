@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <h2>Star pattern</h2>
+    Enter the number=<input type="text" id="h1"><br><br>
+    <button onClick="ENTER()">Click</button><br><br>
+    <script>
+        function ENTER() {
+            var n = parseInt(document.getElementById("h1").value);
+            for (var i = 1; i <= n; i++) {
+                for (var j = 1; j <= i; j++) {
+                    document.write("*");
+                }
+                document.write("<br />");
+            }
+        }
+    </script>
+</body>
+
+</html>

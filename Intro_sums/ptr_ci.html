@@ -1,0 +1,26 @@
+<html lang="en">
+
+
+
+<body>
+    Principal P <input type="number" id="p"><br>
+    TimePeriod T <input type="number" id="t"><br>
+    Rate of interest R <input type="number" id="r"><br>
+
+    <Button onClick="compoundInterest()"> calculate </Button>
+    <div id="root"></div>
+
+    <script>
+        let compoundInterest = () => {
+            let p = document.getElementById("p").value;
+            let t = document.getElementById("t").value;
+            let r = document.getElementById("r").value;
+            ci = p * Math.pow((1 + r / 100), t);
+            console.log(ci);
+            document.getElementById("root").innerHTML = "<p>" + "Compound interest CI= " + ci + "</p>";
+        }
+
+    </script>
+</body>
+
+</html>

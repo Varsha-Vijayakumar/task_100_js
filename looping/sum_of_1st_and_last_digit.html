@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <h2>Sum of first and last digit</h2>
+    Enter the number=<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">Click</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER() {
+            var n = parseFloat(document.getElementById("h1").value);
+            var lnum = n % 10;
+            while (n > 10) {
+                var n = Math.floor(n / 10);
+
+            }
+            document.getElementById("demo").innerHTML = "Sum=" + parseInt(n + lnum);
+
+        }
+    </script>
+</body>
+
+</html>

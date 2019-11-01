@@ -1,0 +1,22 @@
+<html lang="en">
+
+
+<body>
+    Number <input type="number" id="num" /><br>
+    Power Number <input type="number" id="pow" /> <br>
+
+    <Button onClick="pow()"> Result </Button>
+    <div id="root"></div>
+
+
+    <script>
+        let pow = () => {
+            let num = Number(document.getElementById("num").value);
+            let pow = Number(document.getElementById("pow").value);
+            res = Math.pow(num, pow);
+            document.getElementById("root").innerHTML = "<p>" + num + "^" + pow + "=" + res + "</p>";
+        }
+    </script>
+</body>
+
+</html>

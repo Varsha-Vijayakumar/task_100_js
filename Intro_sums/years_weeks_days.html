@@ -1,0 +1,21 @@
+<html lang="en">
+
+<body>
+    No of Days =<input type="number" id="days" /><br><br>
+
+    <Button onClick="calc()"> Result </Button>
+    <div id="root"></div>
+
+
+    <script>
+        let calc = () => {
+            let days = Number(document.getElementById("days").value);
+            years = Math.floor(days / 365);
+            weeks = Math.floor((days % 365) / 7);
+            days = Math.floor((days % 365) % 7);
+            document.getElementById("root").innerHTML = "<p>" + years + "years" + "<br>" + weeks + "weeks" + "<br>" + days + "days" + "</p>";
+        }
+    </script>
+</body>
+
+</html>

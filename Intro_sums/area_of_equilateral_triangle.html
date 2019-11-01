@@ -1,0 +1,19 @@
+<html lang="en">
+
+<body>
+    Side <input type="number" id="side"><br><br>
+
+    <Button onClick="calc()"> Area </Button>
+    <div id="root"></div>
+
+
+    <script>
+        let calc = () => {
+            let side = Number(document.getElementById("side").value);
+            res = ((Math.sqrt(3) / 4) * (side * side));
+            document.getElementById("root").innerHTML = "<p>" + "Area of the Equilateral triangle is " + res + "</p>";
+        }
+    </script>
+</body>
+
+</html>

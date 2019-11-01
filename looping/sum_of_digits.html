@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <h2>Sum of digits</h2>
+    Enter the number=<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">Click</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER() {
+            var n = parseFloat(document.getElementById("h1").value);
+            var rem = 0;
+            while (n) {
+                rem += n % 10;
+                var n = Math.floor(n / 10);
+                document.getElementById("demo").innerHTML = "Sum=" + parseInt(rem);
+            }
+
+        }
+    </script>
+</body>
+
+</html>

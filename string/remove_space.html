@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <h2> Remove extra space in the string </h2>
+    Enter string=<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="REMOVE()">Click</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function REMOVE() {
+            var str = document.getElementById("h1").value;
+            str = str.replace(/\s+/g, '');
+            str = str.replace(/\s+/g, ' ').trim();
+            document.getElementById("demo").innerHTML = "After removing spaces=" + str;
+
+        }
+    </script>
+</body>
+
+</html>

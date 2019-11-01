@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <h2> Leading space</h2>
+    Enter a string=<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="REMOVE()">Click</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function REMOVE() {
+            var str = document.getElementById("h1").value;
+            str = str.replace(/^\s+/g, "");
+            document.getElementById("demo").innerHTML = "After removing spaces=" + str;
+
+        }
+    </script>
+</body>
+
+</html>

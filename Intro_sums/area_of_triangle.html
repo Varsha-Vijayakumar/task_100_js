@@ -1,0 +1,22 @@
+<html lang="en">
+
+
+<body>
+    Base <input type="number" id="first"> <br><br>
+    Height <input type="number" id="second"><br><br>
+
+    <Button onClick="calc()"> Area </Button>
+    <div id="root"></div>
+
+
+    <script>
+        let calc = () => {
+            let first = Number(document.getElementById("first").value);
+            let second = Number(document.getElementById("second").value);
+            res = (first * second) / 2;
+            document.getElementById("root").innerHTML = "<p>" + "Area of the triangle is " + res + "</p>";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <h2> Factorial</h2>
+    Enter a number=<br><br>
+    <input id="h1" type="text"><br><br>
+    <button onClick="ENTER()">Click</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER() {
+            var fact = 1;
+            var value = parseInt(document.getElementById("h1").value);
+            for (var i = 1; i <= value; i++) {
+                fact = fact * i;
+            }
+            document.getElementById("demo").innerHTML = "Answer=" + fact;
+
+        }
+    </script>
+</body>
+
+</html>

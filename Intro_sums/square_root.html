@@ -1,0 +1,19 @@
+<html lang="en">
+
+<body>
+    Number <input type="number" id="num" /> <br>
+
+    <Button onClick="sqroot()"> Result </Button>
+    <div id="root"></div>
+
+
+    <script>
+        let sqroot = () => {
+            let num = Number(document.getElementById("num").value);
+            res = Math.sqrt(num);
+            document.getElementById("root").innerHTML = "<p>" + "SquareRoot of the " + num + " is " + res + "</p>";
+        }
+    </script>
+</body>
+
+</html>

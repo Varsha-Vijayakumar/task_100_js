@@ -1,0 +1,25 @@
+<html lang="en">
+
+<body>
+    Enter Number <input type="number" id="a"><br><br>
+
+    <Button onClick="calc()"> Check </Button>
+    <div id="root"></div>
+
+
+    <script>
+        let calc = () => {
+            let a = Number(document.getElementById("a").value);
+
+            if (a % 2 === 0) {
+                document.getElementById("root").innerHTML = "<p>" + a + " is Even Number <p>";
+            }
+
+            else {
+                document.getElementById("root").innerHTML = "<p> " + a + " is Odd Number</p>";
+            }
+        }
+    </script>
+</body>
+
+</html>

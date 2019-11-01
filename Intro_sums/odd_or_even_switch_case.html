@@ -1,0 +1,27 @@
+<html>
+
+<body>
+    <h2>Odd or even</h2>
+    Enter a number=
+    <input type="text" id="h1"><br><br>
+    <button onClick="ENTER()">Click</button><br><br>
+    <div id="demo"></div>
+    <script>
+        function ENTER() {
+            var num = parseInt(document.getElementById("h1").value);
+            switch (num % 2) {
+                case 0:
+
+                    document.getElementById("demo").innerHTML = num + " is even";
+                    break;
+                case 1:
+                    document.getElementById("demo").innerHTML = num + " is odd";
+                    break;
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>

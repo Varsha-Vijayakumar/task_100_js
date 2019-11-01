@@ -1,0 +1,31 @@
+<html lang="en">
+
+
+<body>
+    Enter alphabet <input type="text" maxlength=1 id="a"><br><br>
+
+    <Button onClick="calc()"> Check </Button>
+    <div id="root"></div>
+
+
+    <script>
+        let calc = () => {
+            let alp = /^[A-Za-z]+$/;
+            let check = /^[aeiouAEIOU]$/i;
+            let char = document.getElementById("a").value;
+            if (char.match(alp)) {
+                if (char.match(check)) {
+                    document.getElementById("root").innerHTML = "<p> " + char + " is a vowels </p>";
+                }
+                else {
+                    document.getElementById("root").innerHTML = "<p> " + char + " is a consonents</p>";
+                }
+            }
+            else {
+                alert("enter alphabets only");
+            }
+        } 
+    </script>
+</body>
+
+</html>

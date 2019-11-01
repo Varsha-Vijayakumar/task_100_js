@@ -1,0 +1,51 @@
+<html lang="en">
+
+
+<body>
+    <h3>Maths =<input type="number" id="s1"></h3>
+    <h3>Physics =<input type="number" id="s2"></h3>
+    <h3>Chemistry =<input type="number" id="s3"></h3>
+    <h3>Tamil =<input type="number" id="s4"></h3>
+    <h3>English =<input type="number" id="s5"></h3>
+    <Button onClick="tot()">Total</Button>
+    <Button onClick="avg()">Average</Button>
+    <Button onClick="per()">Percentage</Button>
+    <div id="root"></div>
+
+    <script>
+
+        let tot = () => {
+            let s1 = Number(document.getElementById("s1").value);
+            let s2 = Number(document.getElementById("s2").value);
+            let s3 = Number(document.getElementById("s3").value);
+            let s4 = Number(document.getElementById("s4").value);
+            let s5 = Number(document.getElementById("s5").value);
+            res = s1 + s2 + s3 + s4 + s5;
+            console.log(res);
+            document.getElementById('root').innerHTML = "<p>" + "Total=" + res + "<p>";
+        }
+        let avg = () => {
+            let s1 = Number(document.getElementById("s1").value);
+            let s2 = Number(document.getElementById("s2").value);
+            let s3 = Number(document.getElementById("s3").value);
+            let s4 = Number(document.getElementById("s4").value);
+            let s5 = Number(document.getElementById("s5").value);
+            res = (s1 + s2 + s3 + s4 + s5) / 5;
+            console.log(res);
+            document.getElementById('root').innerHTML = "<p>" + "Average=" + res + "<p>";
+        }
+        let per = () => {
+            let s1 = Number(document.getElementById("s1").value);
+            let s2 = Number(document.getElementById("s2").value);
+            let s3 = Number(document.getElementById("s3").value);
+            let s4 = Number(document.getElementById("s4").value);
+            let s5 = Number(document.getElementById("s5").value);
+            tot = (s1 + s2 + s3 + s4 + s5);
+            res = (tot / 500) * 100
+            console.log(res);
+            document.getElementById('root').innerHTML = "<p>" + "percentage=" + res + "&#37" + "<p>";
+        }
+    </script>
+</body>
+
+</html>
